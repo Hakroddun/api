@@ -1,4 +1,4 @@
-package com.test.api.Response;
+package com.test.api.response;
 
 public class UserResponse
 {

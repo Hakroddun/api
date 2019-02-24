@@ -1,7 +1,7 @@
-package com.test.api.Security.Services;
+package com.test.api.security.services;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.test.api.Entity.User;
+import com.test.api.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -24,7 +24,7 @@ public class UserPrinciple implements UserDetails
 
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UserPrinciple(Long id, String username, String password, Collection<? extends GrantedAuthority> authorities)
+    private UserPrinciple(Long id, String username, String password, Collection<? extends GrantedAuthority> authorities)
     {
         this.id = id;
         this.username = username;
@@ -32,7 +32,7 @@ public class UserPrinciple implements UserDetails
         this.authorities = authorities;
     }
 
-    public static UserPrinciple build(User user)
+    static UserPrinciple build(User user)
     {
         List<GrantedAuthority> authorities = user.getRoles().stream().map(role ->
                 new SimpleGrantedAuthority(role.getName().name())

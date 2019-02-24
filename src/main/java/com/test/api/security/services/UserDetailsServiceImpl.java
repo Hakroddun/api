@@ -1,7 +1,7 @@
-package com.test.api.Security.Services;
+package com.test.api.security.services;
 
-import com.test.api.Entity.User;
-import com.test.api.Repository.UserRepository;
+import com.test.api.entity.User;
+import com.test.api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -14,7 +14,7 @@ public class UserDetailsServiceImpl implements UserDetailsService
 {
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Override
     @Transactional

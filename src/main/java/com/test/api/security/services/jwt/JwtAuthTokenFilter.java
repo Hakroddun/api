@@ -1,6 +1,6 @@
-package com.test.api.Security.Services.jwt;
+package com.test.api.security.services.jwt;
 
-import com.test.api.Security.Services.UserDetailsServiceImpl;
+import com.test.api.security.services.UserDetailsServiceImpl;
 import io.jsonwebtoken.JwtException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

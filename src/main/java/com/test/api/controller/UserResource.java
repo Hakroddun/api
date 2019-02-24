@@ -1,15 +1,15 @@
-package com.test.api.Controller;
+package com.test.api.controller;
 
-import com.test.api.Entity.Role;
-import com.test.api.Entity.RoleName;
-import com.test.api.Entity.User;
-import com.test.api.Repository.UserRepository;
-import com.test.api.Request.LoginRequest;
-import com.test.api.Request.UserRequest;
-import com.test.api.Response.LoginResponse;
-import com.test.api.Response.LogoutResponse;
-import com.test.api.Response.UserResponse;
-import com.test.api.Security.Services.jwt.JwtProvider;
+import com.test.api.entity.Role;
+import com.test.api.entity.RoleName;
+import com.test.api.entity.User;
+import com.test.api.repository.UserRepository;
+import com.test.api.request.LoginRequest;
+import com.test.api.request.UserRequest;
+import com.test.api.response.LoginResponse;
+import com.test.api.response.LogoutResponse;
+import com.test.api.response.UserResponse;
+import com.test.api.security.services.jwt.JwtProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +24,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

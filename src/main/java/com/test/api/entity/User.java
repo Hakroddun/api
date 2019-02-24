@@ -1,4 +1,4 @@
-package com.test.api.Entity;
+package com.test.api.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

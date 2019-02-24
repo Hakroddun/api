@@ -1,8 +1,8 @@
-package com.test.api.Security;
+package com.test.api.security;
 
-import com.test.api.Security.Services.UserDetailsServiceImpl;
-import com.test.api.Security.Services.jwt.JwtAuthEntryPoint;
-import com.test.api.Security.Services.jwt.JwtAuthTokenFilter;
+import com.test.api.security.services.UserDetailsServiceImpl;
+import com.test.api.security.services.jwt.JwtAuthEntryPoint;
+import com.test.api.security.services.jwt.JwtAuthTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,13 +23,13 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter
 {
     @Autowired
-    UserDetailsServiceImpl userDetailsService;
+    private UserDetailsServiceImpl userDetailsService;
 
     @Autowired
     private JwtAuthEntryPoint unauthorizedHandler;
 
     @Bean
-    public JwtAuthTokenFilter authenticationJwtTokenFilter()
+    private JwtAuthTokenFilter authenticationJwtTokenFilter()
     {
         return new JwtAuthTokenFilter();
     }
@@ -50,7 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder()
+    private PasswordEncoder passwordEncoder()
     {
         return new BCryptPasswordEncoder();
     }

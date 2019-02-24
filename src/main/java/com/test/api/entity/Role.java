@@ -1,4 +1,4 @@
-package com.test.api.Entity;
+package com.test.api.entity;
 
 import org.hibernate.annotations.NaturalId;
 

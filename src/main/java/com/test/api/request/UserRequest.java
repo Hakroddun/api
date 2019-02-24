@@ -1,13 +1,17 @@
-package com.test.api.Request;
+package com.test.api.request;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-public class LoginRequest
+public class UserRequest
 {
     @NotBlank
-    @Size(min = 3, max = 60)
+    @Size(min = 3, max = 50)
     private String username;
+
+    @NotBlank
+    @Size(max = 60)
+    private String phone;
 
     @NotBlank
     @Size(min = 6, max = 40)
@@ -23,6 +27,16 @@ public class LoginRequest
         this.username = username;
     }
 
+    public String getPhone()
+    {
+        return phone;
+    }
+
+    public void setPhone(String phone)
+    {
+        this.phone = phone;
+    }
+
     public String getPassword()
     {
         return password;
@@ -32,4 +46,5 @@ public class LoginRequest
     {
         this.password = password;
     }
+
 }
