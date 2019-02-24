@@ -18,7 +18,7 @@ Click send to save that user to the database.
 In postman click on the Get Users request.  
 Click send to retrieve a list of users in the database.  
   
-#Login 
+#Login  
 [POST] /api/login  
 In postman click on the Login User request.  
 In Body edit the JSON object with the username and password saved previously.  
