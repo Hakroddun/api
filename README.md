@@ -6,7 +6,8 @@ It allows the saving of users, login and logout functionality, the retrieving of
 Import it as a Maven project, and run the main method in the ApiApplication class.  
 Check that it starts up wihout errors.  
 Import the API.postman_collection.json file into postman.  
-  
+All calls use TLS (HTTPS) on the port 443.  
+
 #Create a user  
 [PUT] /api/users  
 In postman click on the Save User request.  
