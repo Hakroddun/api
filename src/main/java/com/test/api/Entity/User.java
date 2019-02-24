@@ -18,15 +18,15 @@ public class User
     private Long id;
 
     @NotBlank
-    @Size(min=3, max = 50)
+    @Size(min = 3, max = 50)
     private String username;
 
     @NotBlank
-    @Size(min=10, max = 10)
+    @Size(min = 10, max = 10)
     private String phone;
 
     @NotBlank
-    @Size(min=6, max = 100)
+    @Size(min = 6, max = 100)
     private String password;
 
     private String jwtToken;
@@ -117,11 +117,13 @@ public class User
         this.jwtToken = jwtToken;
     }
 
-    public Set<Role> getRoles() {
+    public Set<Role> getRoles()
+    {
         return roles;
     }
 
-    public void setRoles(Set<Role> roles) {
+    public void setRoles(Set<Role> roles)
+    {
         this.roles = roles;
     }
 
