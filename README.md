@@ -2,12 +2,12 @@
 This is API system that uses Maven, Spring Boot, Spring Security, JWT, JPA and H2.
 It allows the saving of users, login and logout functionality, the retrieving of user details and retrieving users that are actively logged in. 
 
-#Getting Started
+#Getting Started  
 Import it as a Maven project, and run the main method in the ApiApplication class.
 Check that it starts up wihout errors.
 Import the API.postman_collection.json file into postman.
 
-#Create a user
+#Create a user  
 In postman click on the Save User request.
 In Body edit the JSON object with the the username, phone number and password.
 Click send to save that user to the database.
