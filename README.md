@@ -1,5 +1,5 @@
 # api
-This is API system that uses Maven, Spring Boot, Spring Security, JWT, JPA and H2.
+This is a REST API system that uses Maven, Spring Boot, Spring Security, JWT, JPA and H2.
 It allows the saving of users, login and logout functionality, the retrieving of user details and retrieving users that are actively logged in. 
   
 #Getting Started  
