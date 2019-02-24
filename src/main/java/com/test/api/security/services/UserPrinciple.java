@@ -24,7 +24,7 @@ public class UserPrinciple implements UserDetails
 
     private Collection<? extends GrantedAuthority> authorities;
 
-    private UserPrinciple(Long id, String username, String password, Collection<? extends GrantedAuthority> authorities)
+    public UserPrinciple(Long id, String username, String password, Collection<? extends GrantedAuthority> authorities)
     {
         this.id = id;
         this.username = username;
@@ -32,7 +32,7 @@ public class UserPrinciple implements UserDetails
         this.authorities = authorities;
     }
 
-    static UserPrinciple build(User user)
+    public static UserPrinciple build(User user)
     {
         List<GrantedAuthority> authorities = user.getRoles().stream().map(role ->
                 new SimpleGrantedAuthority(role.getName().name())

@@ -1,6 +1,6 @@
-package com.test.api.Security.Services.jwt;
+package com.test.api.security.services.jwt;
 
-import com.test.api.Security.Services.UserPrinciple;
+import com.test.api.security.services.UserPrinciple;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
