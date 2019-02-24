@@ -13,7 +13,7 @@ In postman click on the Save User request.
 In Body edit the JSON object with the the username, phone number and password.  
 Click send to save that user to the database.  
   
-#Retrieve a list of users 
+#Retrieve a list of users  
 [GET] api/users  
 In postman click on the Get Users request.  
 Click send to retrieve a list of users in the database.  
